@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const PartnersContainer = styled.div`
         width: 100%;
         min-height: 40vh;
-        margin: 80px auto;
+        margin: 150px auto;
     & header {
         text-align: center;
         font-size: 1.7rem;

@@ -19,7 +19,7 @@ export default function Footer_() {
           <p>SmartEarner is a trustworthy platform that has been in existence for years serving several financial institutions across the world.</p>
         </div>
         <div className="col">
-          <h3>Address</h3>
+          <h3>Address <div className="underline"><span></span></div></h3>
           <p>APDC Estate Kubwa Express Road</p>
           <p>Kaba District, Zip Code 72762</p>
           <p>Abuja, Nigeria</p>
@@ -27,7 +27,7 @@ export default function Footer_() {
           <h4>+234 803 4477 604</h4>
         </div>
         <div className="col">
-          <h3>
+          <h3>Quick Links<div className="underline"><span></span></div></h3>
             <ul>
               <li><Link href="/" passHref>Home</Link></li>
               <li><Link href="/" passHref>Plans</Link></li>
@@ -35,10 +35,10 @@ export default function Footer_() {
               <li><Link href="/" passHref>Terms of Usage</Link></li>
               <li><Link href="/" passHref>Policy</Link></li>
             </ul>
-          </h3>
+          
         </div>
         <div className="col">
-          <h3>Newsletter</h3>
+          <h3>Newsletter<div className="underline"><span></span></div></h3>
           <form>
             <label>
               <DraftsIcon  fontSize="small"/>
@@ -54,7 +54,8 @@ export default function Footer_() {
           </div>
         </div>
       </div>
-
+      <hr />
+      <p className="copyright">&copy; 2023 SmartEarner All Rights Reserved.</p>
     </Footer>
   )
 }

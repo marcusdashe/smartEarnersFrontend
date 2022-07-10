@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const PlansContainer = styled.div`
     width: 100%;
     min-height: 40vh;
-    margin: 80px auto;
+    margin: 70px auto;
     & .meso-layer{
         width: 80%;
         margin: 60px auto;
