@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
+import GppGoodIcon from '@mui/icons-material/GppGood'
 import styled from 'styled-components'
 
-const optionAmount = [
-  { value: '1000', label: '1000' },
-  { value: '2000', label: '2000' },
-  { value: '3000', label: '3000' },
-  { value: '4000', label: '4000' },
-  { value: '5000', label: '5000' },
-]
+import StyledDashboardHeader from '../../components/user/dashboardHeader'
+
+
 const optionCrypto = [
   { value: 'USDT', label: 'Tether (USDT)' },
   { value: 'BUSD', label: 'Binance (BUSD)' },
@@ -18,25 +15,25 @@ const optionCrypto = [
 export default function Withdrawals() {
   const [ selectCoin, setSelectedCoin ] = useState("USDT")
   const [ selectAmount, setSelectAmount ] = useState("1000")
+  const [isVerified, setIsVerified ] = useState(true)
 
   return (
+  
     <WithdrawalsContainer>
+       <StyledDashboardHeader />
+       
        <section className="central-column">
         <div className="container">
                 <h3>Withdrawal</h3>
 
                 <span>
                         <form>
-                        <Select
-                              placeholder="Choose amount to withdraw"
-                              defaultValue={selectAmount}
-                              onChange={setSelectAmount}
-                              options={optionAmount}
-                          />
-                          <p>Current Balance &nbsp; <b>{1000}SEC</b></p>
-                          <label><input type="text" name="walletaddress" placeholder="Enter Wallet Address" required/></label>
+                        <label><input type="number" name="amount" placeholder='Enter amount to withdraw' maxLength={"10000000"} minLength={"1000"} required/></label>
+                          <p>* Enter amount in multiple of 1000</p>
+                          <p>* Maximum withdrawal is 10k</p>
+                          <label><input type="text" name="walletaddress" placeholder="Enter wallet address" required/></label>
                           <Select
-                              placeholder="Choose Crypto Coin for Deposit"
+                              placeholder="Choose cryptocoin for deposit"
                               defaultValue={selectCoin}
                               onChange={setSelectedCoin}
                               options={optionCrypto}
@@ -46,23 +43,56 @@ export default function Withdrawals() {
                           <p>* Withdrawal is subject to rejection due to malicious attack or invalid input</p>
                           <p>* After withdrawal, you will be alerted within 24 hours</p>
 
-                          <button>Withdraw</button>
+                          <button><small>Proceed with Withdraw </small></button>
                         </form>  
                       </span>    
         </div>
        </section>
     </WithdrawalsContainer>
+  
   )
 }
 
 
 const WithdrawalsContainer = styled.div`
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         margin: 0px;
         /* background: #00415d30; */
         color: #00415d;
         border: 2px solid transparent;
+        
+        .central-column{
+            width: 60%;
+            height: fit-content;
+            background: whitesmoke;
+            margin: 50px auto;
+            border-radius: 4px;
+
+            
+
+            .container{
+                    width: 74%;
+                    margin: 5px auto;
+                    /* border: 2px solid red; */
+                    h3 {
+                        padding-top: 20px;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        /* border: 2px solid green; */
+                    }
+
+                    span{
+                        padding: 10px;
+                        font-size: 1rem;
+                        p{
+                            display: flex;
+                            align-items: center ;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+        }
         .central-column{
             width: 60%;
             height: fit-content;
@@ -102,17 +132,23 @@ const WithdrawalsContainer = styled.div`
             margin:7px 0px;
       }
      & button{
-                margin: 30px auto;
+      margin: 30px auto;
                 border: none;
                 background: var(--bright-color);
                 color: var(--light-color);
-                width: 200px;
+                width: 250px;
                 height: 40px;
                 border-radius: 30px;
                 font-weight: 600;
                 font-size: 1.2rem;
-                padding: 5px;
+                padding: 10px;
                 box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+                small {
+                   display: flex;  
+                  justify-content: center ;
+                  align-items: center ;
+                  
+                }
             }
 
 `

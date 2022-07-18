@@ -4,12 +4,15 @@ import PublishedWithChangesIcon from '@mui/icons-material/PublishedWithChanges';
 import CallReceivedIcon from '@mui/icons-material/CallReceived';
 import PlayForWorkIcon from '@mui/icons-material/PlayForWork';
 import { DateTime } from 'luxon'
+import StyledDashboardHeader from '../../../components/user/dashboardHeader'
 
 
 const TransactionCard = ( { datum }) => {
 
   return (
+    
     <StyledTransactionCard>
+            
             <main>
                 <aside className='left'>
                         <section>
@@ -34,12 +37,14 @@ const TransactionCard = ( { datum }) => {
                     </span>
                 </aside>
             </main>
-           
+            
     </StyledTransactionCard>
   )
 }
 
 const StyledTransactionCard = styled.div`
+
+        
         width: 100%;
         height: 100px;
         margin: 10px;

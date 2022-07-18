@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import Select from 'react-select'
 import styled from 'styled-components'
 
+import StyledDashboardHeader from '../../components/user/dashboardHeader'
+
 
 
 export default function Transfer() {
   return (
     <TransferContainer>
+        <StyledDashboardHeader />
        <section className="central-column">
         <div className="container">
                 <h3>Transfer</h3>
@@ -14,13 +17,13 @@ export default function Transfer() {
                         <form>
                         <label><input type="text" name="account-transfer" placeholder="Enter receiver's account number" required/></label>
                         <label><input type="number" name="amount-transfer" placeholder='Enter amount in SEC to transfer' required/></label>
-                          <p>Current Balance &nbsp; <b>{1000}SEC</b></p>
+                          <p>Current Balance &nbsp; <b>{1000} SEC</b></p>
                         
                           <p>* Make sure you input valid user account number</p>
-                          <p>* Suspicious activity or invalid/non-existent account number can lead to rejection of transfer</p>
-                          <p>* After transfer, you will be alerted within 24 hours</p> 
+                          <p>* Suspicious activity or invalid account number can cause transfer rejection</p>
+                          <p>* You will be alerted within 24 hours</p> 
 
-                          <button>Transfer</button>
+                          <button><small>Proceed with Transfer</small></button>
                         </form>  
                   </span> 
         </div>
@@ -31,13 +34,13 @@ export default function Transfer() {
 
 
 const TransferContainer = styled.div`
-      width: 100%;
-        height: 100vh;
+        width: 100%;
+        height: fit-content;
         margin: 0px;
         /* background: #00415d30; */
         color: #00415d;
         border: 2px solid transparent;
-        .central-column:nth-child(1){
+        .central-column{
             width: 60%;
             height: fit-content;
             background: whitesmoke;
@@ -76,18 +79,24 @@ const TransferContainer = styled.div`
             font-size: 1rem;
             margin:7px 0px;
       }
-     & button{
-                margin: 30px auto;
+      & button{
+      margin: 30px auto;
                 border: none;
                 background: var(--bright-color);
                 color: var(--light-color);
-                width: 200px;
+                width: fit-content;
                 height: 40px;
                 border-radius: 30px;
                 font-weight: 600;
                 font-size: 1.2rem;
-                padding: 5px;
+                padding: 10px;
                 box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
-            }
+                small {
+                   display: flex;  
+                  justify-content: center ;
+                  align-items: center ;
+                  
+                }
+              }
 
 `

@@ -3,6 +3,7 @@ import Select from 'react-select'
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import styled from 'styled-components'
+import StyledDashboardHeader from '../../../components/user/dashboardHeader'
 
 
 const data = {
@@ -28,6 +29,7 @@ export default function Index() {
   }
   return (
     <ReferralContainer>
+      <StyledDashboardHeader />
        <section className="central-column">
         <div className="container">
                 <h3>Referral</h3>
@@ -37,7 +39,7 @@ export default function Index() {
                 </span>  
         </div>
         </section>
-        <section className="central-column">
+        <section className="central-column second">
         <div className="container">
                 <h3>Bonus</h3>
                 <section className="bonus-section">
@@ -63,19 +65,16 @@ export default function Index() {
 
 const ReferralContainer = styled.div`
       width: 100%;
-        height: 100vh;
+        height: fit-content;
         margin: 0px;
-        /* background: #00415d30; */
         color: #00415d;
         border: 2px solid transparent;
-        .central-column:nth-child(1){
-            margin-top:50px;
-        }
+        
         .central-column{
             width: 60%;
             height: fit-content;
             background: whitesmoke;
-            margin: 10px auto;
+            margin: 50px auto 10px;
             border-radius: 4px;
             .container{
                     width: 74%;
@@ -99,6 +98,11 @@ const ReferralContainer = styled.div`
                     }
                   }
             }
+
+            .central-column .second{
+            margin-top:0px;
+            border: 2px solid red;
+        }
 
             & .bonus-section{
               display: flex;
