@@ -1,3 +1,4 @@
+// <<<<<<< HEAD
 import styled from "styled-components"
 
 import Title from "../components/Title"
@@ -337,9 +338,14 @@ export default function Policy() {
               <p>You agree to notify Smartearners if you have any reason to believe your email address or account may have been compromised by any third party. Be a part of the 1% that acts on opportunity.</p>
           </section>
       </div>
-    </PolicyContainer>
-  )
-}
+    </PolicyContainer>)}
+
+// import Tc from "../components/public/tc/Tc.jsx"
+
+// export default function tc() {
+//   return <Tc />
+
+
 
 
 const PolicyContainer = styled.div`
