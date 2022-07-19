@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 import Title from "../components/Title"
 
 export default function Policy() {
@@ -25,7 +24,7 @@ export default function Policy() {
           </p>
 
           <p>
-            This Policy applies to the Personal Data, Earners PRO (“we”, “us”, “our” ) collects when you use our website 
+            This Policy applies to the Personal Data, Smartearners (“we”, “us”, “our” ) collects when you use our website 
             and mobile application (collectively, &quot;Services&quot;) or otherwise interact with us as described below. We may 
             change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at 
             the top of this policy, and in some cases, we may provide you with additional notice (such as by adding a statement to the 
@@ -56,7 +55,7 @@ export default function Policy() {
             <p>
               
               We collect Personal Data you provide to us when you apply for an Earners PRO account or when you 
-              communicate with us about your Earners PRO account. The types of Personal Data we may collect include 
+              communicate with us about your Smartearners account. The types of Personal Data we may collect include 
               your name, address, phone number, email address, date of birth, bank account information, BVN, username, 
               password, and next of kin details.
             </p>
@@ -68,8 +67,7 @@ export default function Policy() {
           </Title>
 
           <section className="write-ups">
-              <p>As you use your Earners PRO account to perform financial transactions, we collect Personal Data in connection with each transaction, including transaction time, Naira amount and merchant details. We may also collect photos, memos or 
-                other information that you attach to your transactions.</p>
+              <p>As you use your Smartearners account to perform financial transactions, we collect Personal Data in connection with each transaction, including transaction time, Naira amount and merchant details. We may also collect photos, memos or other information that you attach to your transactions.</p>
           </section>
 
           <Title level={3}>
@@ -79,7 +77,7 @@ export default function Policy() {
 
           <section className="write-ups">
               <p>
-              When you create an Earners PRO account, we may collect information, including Personal Data about you from non-affiliated third party service providers in order to verify your identity and 
+              When you create an Smartearners account, we may collect information, including Personal Data about you from non-affiliated third party service providers in order to verify your identity and 
               for fraud prevention, including your prior addresses and names.
               </p>
           </section>
@@ -91,8 +89,8 @@ export default function Policy() {
 
           <section className="write-ups">
               <p>
-              We may collect Personal Data you provide to us, such as your name, email address and any other information you choose to provide. For example, we may collect such information if you request an invite to join Earners PRO or if you enter into any contest or promotion. In a case where you choose to enable access to your contacts, we may upload your contact data to our 
-              servers so we can show you your friends who are on Earners PRO.
+              We may collect Personal Data you provide to us, such as your name, email address and any other information you choose to provide. For example, we may collect such information if you request an invite to join Smartearners or if you enter into any contest or promotion. In a case where you choose to enable access to your contacts, we may upload your contact data to our 
+              servers so we can show you your friends who are on Smartearners.
               </p>
           </section>
 
@@ -157,7 +155,7 @@ export default function Policy() {
                   <li>Verify your identity and prevent fraud.</li>
                   <li>Send you technical notices, updates, security alerts and support and administrative messages.</li>
                   <li>Respond to your comments, questions and requests and provide customer service.</li>
-                  <li>Communicate with you about products, services, offers, promotions, rewards, and events offered by Earners PRO and others, 
+                  <li>Communicate with you about products, services, offers, promotions, rewards, and events offered by Smartearners and others, 
                     and provide news and information we think will be of interest to you.</li>
                     <li>Monitor and analyze trends, usage and activities in connection with our Services.</li>
                     <li>Personalize and improve the Services and provide advertisements, content or features that match user 
@@ -165,7 +163,7 @@ export default function Policy() {
                     <li>Process and deliver contest or promotion entries and rewards.</li>
                     <li>Link or combine with information we get from others to help understand your needs and provide 
                       you with better service.</li>
-                    <li>Carry out any other purpose for which the information was collected. Earners PRO is based in Nigeria and the Personal Data we collect is governed by the Nigeria Data Protection Regulation (NDPR). By accessing or using the Services or otherwise providing your Personal Data to us, you consent to the processing and transfer 
+                    <li>Carry out any other purpose for which the information was collected. Smartearners is based in Nigeria and the Personal Data we collect is governed by the Nigeria Data Protection Regulation (NDPR). By accessing or using the Services or otherwise providing your Personal Data to us, you consent to the processing and transfer 
                       of your Personal Data in and to Nigeria and other countries.</li>
               </ul>
             </section>
@@ -202,7 +200,7 @@ export default function Policy() {
 
               <ul>
                 <li>With financial service providers, including the financial institutions identified in your cardholder bank agreement that provide banking services in connection with your Earners PRO account.</li>
-                <li>With another user, when you sign up for Earners PRO&quot;s services via a referral link. The user that referred you may receive information indicating that you have enrolled with Earners PRO. You may avoid this sharing by not using a referral link to enroll.</li>
+                <li>With another user, when you sign up for Smartearners&quot;s services via a referral link. The user that referred you may receive information indicating that you have enrolled with Smartearners. You may avoid this sharing by not using a referral link to enroll.</li>
                 <li>With non-financial companies, such as email service providers that perform marketing services on our behalf, and fraud prevention service providers that use the information to provide services to Earners PRO and other companies.</li>
                 <li>
                   <p>With a non-affiliated third-party to access and transmit your personal and financial information from a relevant financial institution. You grant the third-party the right, power, and authority to access and transmit this information. according to terms of their privacy policy.</p>
@@ -287,7 +285,7 @@ export default function Policy() {
           </Title>
 
           <section className="write-ups">
-              <p>We may allow others to provide analytics services on our behalf and to serve advertisements on our behalf across the Internet. These entities may use cookies, web beacons and other technologies to collect information about your use of the Services and other websites, including your IP address, web browser, pages viewed, time spent on pages, links clicked and conversion information. This Personal Data may be used by Earners PRO and others, to, among other things, analyze and track data, determine the popularity of certain content, deliver advertising targeted to your 
+              <p>We may allow others to provide analytics services on our behalf and to serve advertisements on our behalf across the Internet. These entities may use cookies, web beacons and other technologies to collect information about your use of the Services and other websites, including your IP address, web browser, pages viewed, time spent on pages, links clicked and conversion information. This Personal Data may be used by Smartearners and others, to, among other things, analyze and track data, determine the popularity of certain content, deliver advertising targeted to your 
                 interests and better understand your online activity.
               </p>
           </section>
@@ -321,7 +319,7 @@ export default function Policy() {
 
           <section className="write-ups">
               <p>
-                Earners PRO takes reasonable measures to help protect all Personal Data about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. Additionally, Earners PRO implements policies designed to protect the confidentiality and security of your nonpublic Personal Data, including a privacy protection policy. Earners PRO limits access to your Personal Data to employees that have a business reason to know such Personal Data, and implement security practices and procedures designed to protect the confidentiality and security of such Personal Data and prohibit unlawful disclosure of 
+              Smartearners takes reasonable measures to help protect all Personal Data about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. Additionally, Smartearners implements policies designed to protect the confidentiality and security of your nonpublic Personal Data, including a privacy protection policy. Smartearners limits access to your Personal Data to employees that have a business reason to know such Personal Data, and implement security practices and procedures designed to protect the confidentiality and security of such Personal Data and prohibit unlawful disclosure of 
                 such Personal Data in accordance with its policies.
               </p>
 
@@ -352,7 +350,7 @@ export default function Policy() {
           </Title>
 
           <section className="write-ups">
-              <p>We will hold your Personal Data on Earners PRO’s systems in line with our Retention Schedule to fulfil the purpose for which it was collected or to comply with legal, regulatory or internal policy requirements</p>
+              <p>We will hold your Personal Data onSmartearners’s systems in line with our Retention Schedule to fulfil the purpose for which it was collected or to comply with legal, regulatory or internal policy requirements</p>
           </section>
 
           <Title level={2}>
